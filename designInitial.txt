@@ -1,0 +1,13 @@
+Function Name:
+Parameters:
+Return:
+Algorithm:
+1.
+
+
+Function Name: Main
+Parameters: None
+Return: None
+Algorithm:
+1. Tell the user the purpose of the program
+2.
