@@ -54,7 +54,7 @@ You may find it helpful the first time to start on your algorithm first, and the
 
 **DESIGN SUBMISSION: 10/12/16**
 
-Submit to GitHub: the algorithm for your program in designInitial.txt.
+Submit to GitHub: the algorithm for your program in designInitial.txt. The general format for each function is given. You can copy/paste the starting point (name, parameters, return, algorithm headers) for as many functions as you need to define for your problem.
 
 ***Remember to double check on github.com that your files pushed. If they didn’t, you need to push them. I can only see what is on github.com, not what is only on your computer.
 
