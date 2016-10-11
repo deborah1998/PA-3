@@ -1,8 +1,67 @@
-Function Name:
-Parameters:
+
+Function Name:input_footballnumbers
+Parameters:None
+Return:numbers from user input
+1.)Prompt the user to input a number for completions.
+2.)Prompt the user to input a number for attempts.
+3.)Prompt the user to input a number for passing yards.
+4.)Prompt the user to input a number for touchdown passes.
+5.)Typecast inputs to floats.
+6.)Return typecasted numbers.
+
+Function Name:input_fencingnumbers
+Parameters:None
+Return:numbers from user input
+1.)Prompt the user to input a number for number of fencing participants
+2.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
+3.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
+4.)Prompt the user to input a number for No. of fencers ranked 17-32 in the World Cup standings.
+5.)Prompt the user to input a number for No. of fencers ranked 33-64 in the World Cup standings.
+6.)Prompt the user to input a number for No. of fencers ranked  65-100 in the World Cup standings.
+7.)Prompt the user to input a number for No. of fencers ranked 1-16 in the Junior World Cup standings.
+8.)Typecast inputs to floats.
+9.)Return typecasted numbers.
+
+Function Name:input gymnastic_numbers
+Parameters:None
+Return:numbers from user input
+1.)Prompt the user to input the first score for execution.
+2.)Prompt the user to input the second score for execution.
+3.)Prompt the user to input the third score for execution.
+4.)Prompt the user to input the fourth score for execution.
+5.)Prompt the user to input the fifth score for execution.
+6.)Prompt the user to input the sixth score for difficulty.
+7.)Typecast inputs to floats.
+8.)Return typecasted numbers.
+
+
+Function Name:quarterback_rating
+Parameters:completions,attempts,passing-yards,touchdown-passes,interceptions
 Return:
+100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)+ 2.375 –
+(25 * interceptions/attempts)]/6
 Algorithm:
-1.
+1.Perform the quarterback_rating calculation, store the QB calculation in result
+2.Output the result of the calculation to the user
+
+
+Function Name:strength_factor
+Parameters:N,Sr8,Sr16,Sr32,Sr64,Sr100,Jr16
+Return:[N/10 + 7(Sr8) + 6(Sr16) + 5(Sr32) + 4(Sr64) + 3(Jr16) + 2(Sr100)]/100
+Algorithm:
+1.Perform the strength_factor calculation, store the strength factor calculation in result
+2.Output the result of the strength factor calculation
+
+Function Name:gymnast_finalscore
+Parameters:
+
+Function Name:Menu
+Parameters:None
+Return:chosen menu option
+Algorithm:
+1.Tell the user their options for the  sport stats that the program will calculate
+2.Ask the user to input the  choice of sport statistic they would like to do their calculation for
+3.Return the choice
 
 
 Function Name: Main
