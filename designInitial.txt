@@ -1,7 +1,7 @@
 
 Function Name:input_footballnumbers
 Parameters:None
-Return:numbers from user input
+Return:numbers from user input to determine quarterback rating
 1.)Prompt the user to input a number for completions.
 2.)Prompt the user to input a number for attempts.
 3.)Prompt the user to input a number for passing yards.
@@ -11,7 +11,7 @@ Return:numbers from user input
 
 Function Name:input_fencingnumbers
 Parameters:None
-Return:numbers from user input
+Return:numbers from user input to determine the strength factor
 1.)Prompt the user to input a number for number of fencing participants
 2.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
 3.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
@@ -22,11 +22,11 @@ Return:numbers from user input
 8.)Typecast inputs to floats.
 9.)Return typecasted numbers.
 
-Function Name:input gymnastic_numbers
+Function Name:input_gymnasticsnumbers
 Parameters:None
-Return:numbers from user input
-1.)Prompt the user to input the first score for execution.
-2.)Prompt the user to input the second score for execution.
+Return:numbers from user input to determine gymnastics final score.
+1.)Prompt the user to input the highest score for execution.
+2.)Prompt the user to input the lowest score for execution.
 3.)Prompt the user to input the third score for execution.
 4.)Prompt the user to input the fourth score for execution.
 5.)Prompt the user to input the fifth score for execution.
@@ -53,13 +53,17 @@ Algorithm:
 2.Output the result of the strength factor calculation
 
 Function Name:gymnast_finalscore
-Parameters:
+Parameters:highest score,lowest score, score3,score4,score5,score6
+Return:((highest score + lowest score + score3+score4+score5)-(highest score+lowest score)/3) + score6
+Algorithm:
+1.Perform the gymnast_final score calculation, store calculation in the result
+2.Output the result of the calculation to the user
 
 Function Name:Menu
 Parameters:None
 Return:chosen menu option
 Algorithm:
-1.Tell the user their options for the  sport stats that the program will calculate
+1.Tell the user their options for the  sport  that the program will calculate statistics for(football, fencing or gymnastics).
 2.Ask the user to input the  choice of sport statistic they would like to do their calculation for
 3.Return the choice
 
@@ -68,5 +72,21 @@ Function Name: Main
 Parameters: None
 Return: None
 Algorithm:
-1. Tell the user the purpose of the program
-2.
+1.Tell the user the purpose of the program
+2.Call menu to determine choice
+3.if choice is football
+    a.call input_footballnumbers
+    b.call quarterback_rating, given the inputted values store return value in answer
+    c.if answer is greater than or equal to 158.3
+        d.output "You are a perfect passer"
+    e.otherwise
+        f.ouput answer
+4. otherwise if choice is fencing
+    a.call input_fencing numbers
+    b.call strength_factor, given the inputted values store return value in answer
+    c.output answer
+5.otherwise if choice is gymnastics
+    a.call input_gymnasticsnumbers
+    b.call gymnast_finalscore
+    c.output answer
+6.

@@ -18,8 +18,10 @@ The purpose of this assignment is to give you practice with
 The first stage in your programming assignment is the requirements analysis stage.  You need to make sure you understand the below requirements for what your program needs to do. Your program will give the user the option of calculating statistics relevant to three sports. You must do the calculations for the following sports in your program: 
 
 * Quarterback rating in American football  
-  * The quarterback rating determines how good a quarterback is in passing (throwing) a football. A perfect passer rating in the NFL is considered to be a 158.3.  
-  * QB rating = 100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6  
+  * The quarterback rating determines how good a quarterback is in passing (throwing) a football.
+  A perfect passer rating in the NFL is considered to be a 158.3.
+  * QB rating = 100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)
+  + 2.375 – (25 * interceptions/attempts)]/6
   * Note that attempts means the number of passing attempts made, and is the same number used throughout the equation.  
   * You will want to tell the user whether or not the quarterback is a perfect passer.  
   
@@ -35,7 +37,11 @@ The first stage in your programming assignment is the requirements analysis stag
     * Jr16 = No. of fencers ranked 1-16 in the Junior World Cup standings 
   
 * Calculate the final score for a gymnast on any apparatus. 
-  * Assume there are 6 scores (we’re simplifying slightly from the real world). One score is on difficulty. The other 5 scores are on execution. All scores are between 0 and 10. Of the execution scores, the highest and lowest are dropped. The final score is acquired by adding the difficulty score to the average of the execution scores.
+  * Assume there are 6 scores (we’re simplifying slightly from the real world). One score is on difficulty.
+  The other 5 scores are on execution.
+  All scores are between 0 and 10. Of the execution scores,
+  the highest and lowest are dropped.
+  The final score is acquired by adding the difficulty score to the average of the execution scores.
 
 In your program, you must do some basic error checking: check if you are going to divide by zero when relevant, and don’t do the calculation if that’s the case; and before typecasting input to an int, check that it is only digits, and don’t typecast or do the calculation otherwise. In any case where an error is detected, output that it was an error, and don’t continue the calculation – you can output a zero for the result of the calculation.
 
@@ -44,11 +50,15 @@ The second stage is to design your solution based on the requirements:
 
 1. Determine the tasks being accomplished in your program. Each of these should be a function.
 2. Remember that the user is only going to do ONE of the sports statistics calculations, although your program can do all three of them. They choose which one to do.
-3. Write an algorithm for each function. This algorithm includes parameters, calculations, and returned values. In general your function will NOT output anything, except perhaps error messages when invalid input is given; your main program should do all of the output of results. Results from functions should be returned.
-4. Make the main part of your program be in a “main” function. The main function never takes parameters, and does not return anything. The main function will call most of your other functions.
+3. Write an algorithm for each function. This algorithm includes parameters, calculations, and returned values.
+In general your function will NOT output anything, except perhaps error messages when invalid input is given;
+ your main program should do all of the output of results. Results from functions should be returned.
+4. Make the main part of your program be in a “main” function.
+The main function never takes parameters, and does not return anything. The main function will call most of your other functions.
 5. Double check that you included all of the requirements.
 
-*NOTE:* There are no aspects of this program that you can google how to solve. The only appropriate googling will be if you want to understand a sport or its calculations better. You MUST write your own code to find the min/max for gymnastics.
+*NOTE:* There are no aspects of this program that you can google how to solve. The only appropriate googling will be if you want to understand a sport or its calculations better.
+You MUST write your own code to find the min/max for gymnastics.
 
 You may find it helpful the first time to start on your algorithm first, and then break it up into functions later. But you need to have it written in terms of functions for the design submission. 
 
