@@ -1,0 +1,24 @@
+PA3 Design Grade: 7.4/10
+* Assuming using a late pass instead of late penalty, despite confusion in discussion on that topic.
+
+4/5 Function choices make sense, along with parameters and return types:
+- the idea of breaking up input into separate functions is a good one, but we don't konw how to return multiple values which is why you probably got stuck in your main. For now, just put your input either in main or in the calculation function
+- each of your calculation functions needs to return the result instead of outputting it. You need to put the calculation in your algorithm. if you are going to return it, state what you are returning (like, SSF) in the "Return: " line above the algorithm, and then in your algorithm you need a return step like we had in the examples in class.
+- you can NEVER have a line of code that says "end the program". You need to write your code such that there is nothing left to run in that case.
+- need a min function
+- need a max function
+
+0.9/1 Calculates Quarterback correctly:
+- inputs are generally integers, not floats. Only yards makes sense as a float (how do you have a partial attempt at a pass, or a partial completion?)
+
+0.75/1 Calculates Fencing correctly:
+- number of people should never be a float
+- missing check for SSF > 2
+
+1/2 Calculates Gymnastics correctly:
+- calculation is incorrect, and needs to be in algorithm instead of listing of return anyway
+- missing code to find highest and lowest scores. You cannot ask the user to do what your program is supposed to do (determine highest and lowest).  Think about how you can determine the min and max of a set of 5 values by comparing them.
+
+0.75/1 Error checking is incorporated, and user chooses which calculation to do, and only that calculation runs:
+- missing required int checking
+- you need to check if attempts are zero before doing the calculation. if you do the calculation anyway, your code will still crash, which is what we are trying to avoid.
