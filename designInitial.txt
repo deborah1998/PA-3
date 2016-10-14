@@ -89,4 +89,5 @@ Algorithm:
     a.call input_gymnasticsnumbers
     b.call gymnast_finalscore
     c.output answer
-6.
+
+
