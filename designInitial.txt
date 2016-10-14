@@ -79,7 +79,9 @@ Algorithm:
     b.call quarterback_rating, given the inputted values store return value in answer
     c.if answer is greater than or equal to 158.3
         d.output "You are a perfect passer"
-    e.otherwise
+    e.otherwise if attempts equals zero
+    f.end program
+    g.otherwise
         f.ouput answer
 4. otherwise if choice is fencing
     a.call input_fencing numbers
