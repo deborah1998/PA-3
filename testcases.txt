@@ -61,6 +61,14 @@ Output:
 
 Control Path 5: When the choice is gymnsatics
 Input:
+first score for executuion:8.5
+second score for executuion:7.5
+third score for executuion:6
+fourth score for executuion:9
+fifth score for executuion:10
+sixth score for diffficulty:8
+Output:
+"The final gymnastics score is 16.3"
 
 Control Path 6:When the  user enters a different a different sport than the ones offered
 Input:
