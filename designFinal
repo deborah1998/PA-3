@@ -126,7 +126,7 @@ Algorithm:
 3.)if choice is football:
     a.)call quarterback_rating()
 4.)otherwise  if choice is fencing:
-    a.)call strength factor
+    a.)call strength_factor()
 5.) otherwise if choice is gymnastics:
     a.)gymnastics_calculation()
 
