@@ -1,4 +1,15 @@
 
+# Programmer:Deborah Onyuka
+# Course:CS201.01T, Dr. Olsen
+# Date:[10/04/2016)
+# Programming Assignment:PA3
+# Problem Statement:Create a program that will calculate various sports statistics for the user, based on the user’s choice of statistic.
+# Data In:A series of inputs to questions that will then be used in order to  calculate certain sports statistics.
+# Data Out: The results of those specific calculations made by the users choice of statistic
+# Credits:Class Notes  on functions and while loops
+
+
+
 
 #Purpose:checks to see if the answer inputs a numeric value
 #Parameters:prompt
@@ -7,6 +18,9 @@ def read_int(prompt):
     number = input("Please enter a number value:")
     if number.isdigit():
         return int(number)
+    elif number!= number.isdigit():
+        print("This is not a valid input!")
+        return 0
 
 #Purpose:Calculate the quarterback rating
 #Parameters:none
