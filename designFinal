@@ -125,11 +125,15 @@ Algorithm:
 2.)Ask the user to input the  choice of sport statistic they would like to do their calculation for
 3.)if choice is football:
     a.)call quarterback_rating()
-4.) if choice is fencing:
+4.)otherwise  if choice is fencing:
     a.)call strength factor
-5.) if choice is gymnastics:
+5.) otherwise if choice is gymnastics:
     a.)gymnastics_calculation()
-6.)Return the choice
+
+6.)otherwise:
+    a.)output"This is not a valid option"
+
+7.)Return the choice
 
 
 Function Name: Main

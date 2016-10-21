@@ -83,9 +83,11 @@ After your design is complete and correct, it’s time to start programming and 
   * Remember to define functions before they are used (so if function A calls function B, you need to define function B first in your program)
   * Remember to state the purpose of the program
 * Testing: Make sure it works correctly; give it sample input, and check that the output is correct.
-  * Create a partial flowchart for your program. You only need to show the details for 1 sport’s calculations. For the other 2 sports, just draw a box and state “calculations for X” where X is replaced with the name of the sport. 
+  * Create a partial flowchart for your program. You only need to show the details for 1 sport’s calculations.
+   For the other 2 sports, just draw a box and state “calculations for X” where X is replaced with the name of the sport.
   * Label the control paths in your flowchart. For each control path related to the sport your flowchart, list a test case.
-  * Test your program using the test cases. You ALSO need to make sure you test your other sport calculations even though they aren’t part of your flowchart. If it doesn’t give the expected output, find the error and fix it. You are expected to turn in a fully functioning program without errors.
+  * Test your program using the test cases.
+   You ALSO need to make sure you test your other sport calculations even though they aren’t part of your flowchart. If it doesn’t give the expected output, find the error and fix it. You are expected to turn in a fully functioning program without errors.
 
 ## ASSIGNMENT REMINDERS
 Follow the programming assignment requirements document for comments, formatting, etc.
@@ -108,7 +110,8 @@ Write a short reflection about the programming assignment in reflection.txt: wha
   * Your extra credit .py file if you did the extra credit (make sure “extraCredit” is in the filename)
   * Your reflection of the programming assignment in reflection.txt
   * Your final algorithm, including the changes you made based on the design feedback in designFinal.txt
-  * Your test cases based on your flowchart in testcases.txt. You should have at least 1 test case per control path, using boundary values (see notes #7).
+  * Your test cases based on your flowchart in testcases.txt. Y
+  ou should have at least 1 test case per control path, using boundary values (see notes #7).
 * Hardcopy in class:
   * A flowchart of your program as described above, with control paths labeled
   * A printout of your .py file

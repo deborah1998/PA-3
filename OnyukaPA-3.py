@@ -152,6 +152,8 @@ def menu():
         strength_factor()
     elif choice.lower()=="gymnastics":
         gymnastics_calculation()
+    else:
+        print("This is not a valid option!!!!")
 
     return choice
 

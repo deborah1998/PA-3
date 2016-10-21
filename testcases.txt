@@ -1,0 +1,42 @@
+
+Testcases for PA #
+
+
+Control Path 1 when choice == football:
+input:football
+(boundary values)
+completions:90
+attempts:45
+passingyards:100
+touchdown passes:75
+interceptions:45
+output:
+"The quarterback rating is 316, They are a perfect passer!"
+
+
+Control Path 2 when choice is football,
+input:football
+completions:90
+attempts:0
+passingyards:100
+touchdown passes:75
+interceptions:45
+output:
+
+
+
+Control Path 3: when chooice is fencing and the result is greater than 2
+
+
+
+
+
+
+Control Path 5:
+
+
+
+
+
+Control Path 6:
+Input:
