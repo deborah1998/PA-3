@@ -59,7 +59,7 @@ Output:
 
 
 
-Control Path 5: When the choice is gymnsatics
+Control Path 5: When the choice is gymnastics
 Input:
 first score for executuion:8.5
 second score for executuion:7.5
