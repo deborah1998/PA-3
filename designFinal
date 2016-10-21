@@ -1,0 +1,70 @@
+
+Function Name:read_int
+Parameters:None
+Return:An integer value input by the user
+1.)Prompt the user to input a number for completions.
+2.)Prompt the user to input a number for attempts.
+3.)Prompt the user to input a number for passing yards.
+4.)Prompt the user to input a number for touchdown passes.
+5.)Typecast inputs to floats.
+6.)Return typecasted numbers.
+
+
+
+
+Function Name:quarterback_rating
+Parameters:completions,attempts,passing-yards,touchdown-passes,interceptions
+Return:
+100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)+ 2.375 –
+(25 * interceptions/attempts)]/6
+Algorithm:
+1.Perform the quarterback_rating calculation, store the QB calculation in result
+2.Output the result of the calculation to the user
+
+
+Function Name:strength_factor
+Parameters:N,Sr8,Sr16,Sr32,Sr64,Sr100,Jr16
+Return:[N/10 + 7(Sr8) + 6(Sr16) + 5(Sr32) + 4(Sr64) + 3(Jr16) + 2(Sr100)]/100
+Algorithm:
+1.Perform the strength_factor calculation, store the strength factor calculation in result
+2.Output the result of the strength factor calculation
+
+Function Name:gymnast_finalscore
+Parameters:highest score,lowest score, score3,score4,score5,score6
+Return:((highest score + lowest score + score3+score4+score5)-(highest score+lowest score)/3) + score6
+Algorithm:
+1.Perform the gymnast_final score calculation, store calculation in the result
+2.Output the result of the calculation to the user
+
+Function Name:Menu
+Parameters:None
+Return:chosen menu option
+Algorithm:
+1.Tell the user their options for the  sport  that the program will calculate statistics for(football, fencing or gymnastics).
+2.Ask the user to input the  choice of sport statistic they would like to do their calculation for
+3.Return the choice
+
+
+Function Name: Main
+Parameters: None
+Return: None
+Algorithm:
+1.Tell the user the purpose of the program
+2.Call menu to determine choice
+3.if choice is football
+    a.call input_footballnumbers
+    b.call quarterback_rating, given the inputted values store return value in answer
+    c.if answer is greater than or equal to 158.3
+        d.output "You are a perfect passer"
+    e.otherwise if attempts equals zero
+    f.end program
+    g.otherwise
+        f.ouput answer
+4. otherwise if choice is fencing
+    a.call input_fencing numbers
+    b.call strength_factor, given the inputted values store return value in answer
+    c.output answer
+5.otherwise if choice is gymnastics
+    a.call input_gymnasticsnumbers
+    b.call gymnast_finalscore
+    c.output answer

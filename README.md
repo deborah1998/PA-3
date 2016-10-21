@@ -26,7 +26,8 @@ The first stage in your programming assignment is the requirements analysis stag
   * You will want to tell the user whether or not the quarterback is a perfect passer.  
   
 * Strength factor for the USA Fencing Team
-  * The strength factor (SSF) determines how strong a team is, based on the number of people who have qualified for the national team. No matter what the below equation calculates, the result cannot be higher than 2.0.
+  * The strength factor (SSF) determines how strong a team is, based on the number of people who have qualified for the national team.
+   No matter what the below equation calculates, the result cannot be higher than 2.0.
   * SSF = [N/10 + 7(Sr8) + 6(Sr16) + 5(Sr32) + 4(Sr64) + 3(Jr16) + 2(Sr100)]/100, where 
     * N = Number of Competitors 
     * Sr8 = No. of fencers ranked 1-8 in the World Cup standings 
