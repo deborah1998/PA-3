@@ -11,19 +11,54 @@ Return:An integer value input by the user
 
 Function Name:quarterback_rating
 Parameters:none
-Return:100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)+ 2.375 –
-(25 * interceptions/attempts)]/6
+Return:(100 * ((5*(completions / attempts - 0.3 )+ 0.25*(passingyards / attempts - 3) + 20*(touchdownpasses / attempts)+ 2.375-(25 * interceptions / attempts))) / 6)
 Algorithm:
-1.Perform the quarterback_rating calculation, store the QB calculation in result
-2.return the result
+1.)Prompt the user to input a number for completions store it in the variable completions.
+2.)call the read_int function to convert  input for completions to an int
+3.)Prompt the user to input a number for attempts store it in the variable attempts.
+4.)call the read_int function to convert  input for attempts to an int
+5.) while attempts <=0:
+        a.output"This is an invalid input.You can't have zero or less attempts!"
+        b.prompt the user to enter the number of attempts
+        c.call the read_int function to convert  input for attempts to an int
 
+6.)Prompt the user to input a number for passing yards store it in the variable passing yards.
+7.)call the read_int function to convert  input for passing yards to an int
+8.)Prompt the user to input a number for touchdown passes store it in the variable touchdown passes.
+9.)call the read_int function to convert  input for touchdown passes to an int
+10.)Prompt the user to input a number for interceptions store it in the variable interceptions.
+11.)call the read_int function to convert input for interceptions to an int
+12.)Perform the calculation:
+(100 * ((5*(completions / attempts - 0.3 )+ 0.25*(passingyards / attempts - 3) + 20*(touchdownpasses / attempts)+ 2.375-(25 * interceptions / attempts))) / 6),
+store the QB calculation in result
+13.)if result is greater than or equal to 158.3:
+    a.output"They are a perfect passer!"
+14.)elif result  is less than 158.3 and result is greater than or equal to zero:
+    a.output"The quarterback rating of this player is ,result,"They are not a perfect passer"
+15.)else:
+    a.output""The quarterback rating of this player is ,result,"that is an invalid answer you gave bad input!"
+16.) return result
 
 Function Name:strength_factor
-Parameters:N,Sr8,Sr16,Sr32,Sr64,Sr100,Jr16
-Return:[N/10 + 7(Sr8) + 6(Sr16) + 5(Sr32) + 4(Sr64) + 3(Jr16) + 2(Sr100)]/100
+Parameters:none
+Return:(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100))
 Algorithm:
-1.Perform the strength_factor calculation, store the strength factor calculation in result
-2.Output the result of the strength factor calculation
+1.)Prompt the user to input a number for number of fencing participants
+2.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
+3.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
+4.)Prompt the user to input a number for No. of fencers ranked 17-32 in the World Cup standings.
+5.)Prompt the user to input a number for No. of fencers ranked 33-64 in the World Cup standings.
+6.)Prompt the user to input a number for No. of fencers ranked  65-100 in the World Cup standings.
+7.)Prompt the user to input a number for No. of fencers ranked 1-16 in the Junior World Cup standings.
+8.)Typecast inputs to floats.
+9.)Return typecasted numbers.
+
+
+
+
+
+
+
 
 Function Name:gymnast_finalscore
 Parameters:highest score,lowest score, score3,score4,score5,score6

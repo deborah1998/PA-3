@@ -47,7 +47,7 @@ def quarterback_rating():
     interceptions=(input("Please enter the number of interceptions:"))
     interceptions=read_int(interceptions
                            )
-    result=(100 * ((5*(completions / attempts - 0.3 )+ 0.25*(passingyards / attempts - 3) + 20*(touchdownpasses / attempts)+ 2.375-(25 * interceptions / attempts))) / 6)
+    result=int(100 * ((5*(completions / attempts - 0.3 )+ 0.25*(passingyards / attempts - 3) + 20*(touchdownpasses / attempts)+ 2.375-(25 * interceptions / attempts))) / 6)
 
     if result >= 158.3:
         print("The quarterback rating of this player is", result, "They are a perfect passer!")
@@ -77,7 +77,7 @@ def strength_factor():
     Sr100=read_int(Sr100)
     Jr16=(input("Please enter the number of fencers ranked 1-16 in the Junior World Cup Standings."))
     Jr16=read_int(Jr16)
-    result=(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100))
+    result=int(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100))
     print("The strength factor for the U.S Fencing team is",result)
     while result > 2:
         print("The strength factor can not be higher than 2!")
