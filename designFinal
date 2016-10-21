@@ -43,15 +43,25 @@ Function Name:strength_factor
 Parameters:none
 Return:(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100))
 Algorithm:
-1.)Prompt the user to input a number for number of fencing participants
-2.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
-3.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
-4.)Prompt the user to input a number for No. of fencers ranked 17-32 in the World Cup standings.
-5.)Prompt the user to input a number for No. of fencers ranked 33-64 in the World Cup standings.
-6.)Prompt the user to input a number for No. of fencers ranked  65-100 in the World Cup standings.
-7.)Prompt the user to input a number for No. of fencers ranked 1-16 in the Junior World Cup standings.
-8.)Typecast inputs to floats.
-9.)Return typecasted numbers.
+1.)Prompt the user to input a number for number of fencing participants store in the variable N
+2.)call the read_int function to convert  input for fencing participants to an int
+3.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
+4.)call the read_int function to convert  input for No. of fencers ranked 1-8 to an int
+5.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
+6.)call the read_int function to convert  input for No. of fencers ranked 9-16 to an int
+7.)Prompt the user to input a number for No. of fencers ranked 17-32 in the World Cup standings.
+8.)call the read_int function to convert  input for No. of fencers ranked 17-32 to an int
+9.)Prompt the user to input a number for No. of fencers ranked 33-64 in the World Cup standings.
+10.)call the read_int function to convert  input for No. of fencers ranked 33-64to an int
+11.)Prompt the user to input a number for No. of fencers ranked  65-100 in the World Cup standings.
+12.)call the read_int function to convert  input for No. of fencers ranked 65-100 to an int
+13.)Prompt the user to input a number for No. of fencers ranked 1-16 in the Junior World Cup standings.
+14.)call the read_int function to convert input for No. of fencers ranked 1-16  to an int
+15.)perform the  calculation :
+(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100)), store answer to calculation in result
+16.)output "The strength factor if the U.S fencing team is", result)
+17.)While result > 2
+
 
 
 
