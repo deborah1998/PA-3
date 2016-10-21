@@ -1,7 +1,7 @@
 
 # Programmer:Deborah Onyuka
 # Course:CS201.01T, Dr. Olsen
-# Date:[10/04/2016)
+# Date:[10/20/2016)
 # Programming Assignment:PA3
 # Problem Statement:Create a program that will calculate various sports statistics for the user, based on the user’s choice of statistic.
 # Data In:A series of inputs to questions that will then be used in order to  calculate certain sports statistics.
