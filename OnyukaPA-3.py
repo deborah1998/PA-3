@@ -1,10 +1,16 @@
 
+
+#Purpose:checks to see if the answer inputs a numeric value
+#Parameters:prompt
+#Return:the user's valid input converted to an int
 def read_int(prompt):
     number = input("Please enter a number value:")
     if number.isdigit():
         return int(number)
 
-
+#Purpose:Calculate the quarterback rating
+#Parameters:none
+#Return:the result of the quarterback calculations given the user's input
 def quarterback_rating():
     completions=(input("Please enter the number of completions:"))
     completions=read_int(completions)
@@ -39,6 +45,9 @@ def quarterback_rating():
         print("The quarterback rating of this player is", result,"that is an invalid answer you gave bad input!")
         return result
 
+#Purpose:Calculate the strength factor for the fencing team
+#Parameters:none
+#Return:The result of the fencing calculation given the user's input
 def strength_factor():
     N=(input("Please enter the number of fencing participants:"))
     N=read_int(N)
@@ -58,6 +67,9 @@ def strength_factor():
     print("The strength factor for the U.S Fencing team is",result)
     return result
 
+#Purpose:To determine the highest gymnastics execution score
+#Parameters:a,b,c,d,e(each score)
+#Return:the maximum score
 
 def gymnastics_max(a,b,c,d,e):
 
@@ -74,6 +86,10 @@ def gymnastics_max(a,b,c,d,e):
 
     return gymnastics_max(a,b,c,d,e)
 
+#Purpose:To determine the lowest gymnastics execution score
+#Parameters:a,b,c,d,e(each score)
+#Return:the minimum score
+
 def gymnastics_min(a,b,c,d,e):
     if a <= b and a <= c and a <= d and a <= e:
         return a
@@ -85,6 +101,11 @@ def gymnastics_min(a,b,c,d,e):
         return d
     elif e <= a and e <= b and e <= c and e <= d:
        return e
+
+#Purpose:To calculate the final gymnastics score by adding all of the execution scores
+# after dropping the highest and lowest scores and adding the difficulty  scores
+#Parameters:[none]
+#Return:The result of the final gymnastics score given the user's input
 
 
 def gymnastics_calculation():
@@ -101,9 +122,9 @@ def gymnastics_calculation():
     return result
 
 
-
-
-
+#Purpose:menu
+#Parameters:none
+#Return:The user's sports stat choice and the given calculation based on that choice
 def menu():
     print("Please choose the sport you would like to get stats for your choices are football,fencing and gymnastics")
     choice=input("Enter your choice of sport:")
@@ -116,6 +137,9 @@ def menu():
 
     return choice
 
+#Purpose:main
+#Parameters:none
+#Return:none
 def main():
     menu()
 
