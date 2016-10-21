@@ -1,0 +1,13 @@
+What did you learn, What would you do differently next time, What was difficult, How were functions useful?
+In this programming assignment I learned how to check for errors by writing a series of if statements and even incorporating
+while loops to help prevent error  which we just learned in class.This programming assignment also helped me practice writing functions and helped
+me learn when to call them and this programming assignment also further helped me learn how to memorize the structure of functions
+as well.Next time I  think that instead of putting all of my input statements under one single function i will put my input statements in my
+main and type cast them there  so that my code is more readable and more neat.What I thought was difficult was actually coming up
+with the min and max functions.I had to go back to old notes and online homework to figure out exactly how to create those min
+and max functions and actually get them to work.I also struggle with coming up with the equations for the gymnastics calculations
+but I eventually understood what i was supposed to go and got that calculation to work.In this programming assignment the functions were extremley
+useful because it shortens the amount of code I would have if we couldn't use functions.Functions were also useful to call when you
+need them so you don't have to keep doing the same thing over and over to certain aspects of the  code by just repeating steps
+when you could just put that one step  it in one function  and call it it when you need it.Functions in this lab helped make the
+code more coherent.

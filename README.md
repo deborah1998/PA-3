@@ -104,7 +104,9 @@ Each of the following extra credit options will earn you extra credit. You can d
 2.	Design a function that allows the user to keep trying to input an int when an int was asked for, until they do so. Use this function wherever you checked for an int in the original program.
 
 ## REFLECTION
-Write a short reflection about the programming assignment in reflection.txt: what did you learn, what would you do differently next time, what was difficult, how were functions useful?  This should be no more than a page.
+Write a short reflection about the programming assignment in reflection.txt:
+what did you learn, what would you do differently next time, what was difficult, how were functions useful?
+This should be no more than a page.
 
 ## FINAL SUBMISSION   
 * To GitHub:
