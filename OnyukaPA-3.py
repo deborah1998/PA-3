@@ -78,10 +78,11 @@ def strength_factor():
     Jr16=(input("Please enter the number of fencers ranked 1-16 in the Junior World Cup Standings."))
     Jr16=read_int(Jr16)
     result=int(((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100))
+    print("The strength factor for the U.S Fencing team is", result)
     while result > 2:
         print("The strength factor can not be higher than 2!")
         strength_factor()
-        print("The strength factor for the U.S Fencing team is", result)
+
     return result
 
 #Purpose:To determine the highest gymnastics execution score
@@ -101,7 +102,7 @@ def gymnastics_max(a,b,c,d,e):
     elif e >= a and e >= b and e >=c and e>=d:
         return e
 
-    return gymnastics_max(a,b,c,d,e)
+
 
 #Purpose:To determine the lowest gymnastics execution score
 #Parameters:a,b,c,d,e(each score)

@@ -5,7 +5,7 @@ Return:An integer value input by the user
 1.)Prompt the user to input a number value.
 2.)if number.isdigit()
     a.return the number typecasted to an int
-3.)elif number does not equal number.isdigit()
+3.)otherwise if number does not equal number.isdigit()
     a.ouput "This input  is not valid !"
     b.return zero
 
@@ -33,9 +33,9 @@ Algorithm:
 store the QB calculation in result
 13.)if result is greater than or equal to 158.3:
     a.output"They are a perfect passer!"
-14.)elif result  is less than 158.3 and result is greater than or equal to zero:
+14.)otherwise if result  is less than 158.3 and result is greater than or equal to zero:
     a.output"The quarterback rating of this player is ,result,"They are not a perfect passer"
-15.)else:
+15.)otherwise:
     a.output""The quarterback rating of this player is ,result,"that is an invalid answer you gave bad input!"
 16.) return result
 
@@ -59,8 +59,46 @@ Algorithm:
 14.)call the read_int function to convert input for No. of fencers ranked 1-16  to an int
 15.)perform the  calculation :
 (((N / 10 )+ (7* Sr8) + (6*Sr16) + (5*Sr32) + (4 *Sr64) + (3*Jr16) + (2*Sr100)) /(100)), store answer to calculation in result
-16.)output "The strength factor if the U.S fencing team is", result)
-17.)While result > 2
+16.)output"The strength factor is", result)
+17.)while result > 2
+    a. output"The strength factor can not be higher than 2!"
+    b.call strength_factor()
+18.)return result
+
+Function Name:gymnastics_max
+Parameters:a,b,c,d,e( representative of each execution score)
+Return:The maximum score
+Algorithm:
+1.)if a is greater than or equal to b and a is greater than or equal to c and a is greater than or equal to d  and a is greater than or equal to e:
+    a.)return a
+2.)otherwise if b is greater than or equal to a and b is greater than or equal to c and b  is greater than or equal to d  and b is greater than or equal to e:
+    a.)return b
+3.) otherwise if c is greater than or equal to a and c is greater than or equal to b  and c is greater than or equal to d  and c is greater than or equal to e:
+    a.)return c
+4.) otherwise if d is greater than or equal to a  and d is greater than or equal to b and d is greater than or equal to c  and d is greater than or equal to e:
+    a.) return d
+5.) otherwise if  e is greater than or equal to a and e is greater than or equal to b and e is greater than or equal to c  and  e is greater than or equal to d:
+    a.)return e
+6.) return gymnastics_max(a,b,c,d,e)
+
+
+Function Name:gymnastics_min
+Parameters:a,b,c,d,e( representative of each execution score)
+Return:The minimum score
+Algorithm:
+1.)if a is less than or equal to b and a is less than or equal to c and a is less than or equal to d  and a is less than or equal to e:
+    a.)return a
+2.)otherwise if b is less than or equal to a and b is less  than or equal to c and b  is less than or equal to d  and b is less than or equal to e:
+    a.)return b
+3.) otherwise if c is less than or equal to a and c is less than or equal to b  and c is less than or equal to d  and c is less than or equal to e:
+    a.)return c
+4.) otherwise if d is less than or equal to a  and d is less  than or equal to b and d is less  than or equal to c  and d is less than or equal to e:
+    a.) return d
+5.) otherwise if  e is less  than or equal to a and e is less than or equal to b and e is less than or equal to c  and  e is less than or equal to d:
+    a.)return e
+6.) return gymnastics_min(a,b,c,d,e)
+
+
 
 
 
