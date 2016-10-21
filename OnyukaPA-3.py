@@ -159,6 +159,7 @@ def menu():
 #Parameters:none
 #Return:none
 def main():
+    print("The purpose of the program is to help you calculate statistics for a given sport")
     menu()
 
 

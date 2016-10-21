@@ -79,7 +79,7 @@ Algorithm:
     a.) return d
 5.) otherwise if  e is greater than or equal to a and e is greater than or equal to b and e is greater than or equal to c  and  e is greater than or equal to d:
     a.)return e
-6.) return gymnastics_max(a,b,c,d,e)
+
 
 
 Function Name:gymnastics_min
@@ -96,32 +96,40 @@ Algorithm:
     a.) return d
 5.) otherwise if  e is less  than or equal to a and e is less than or equal to b and e is less than or equal to c  and  e is less than or equal to d:
     a.)return e
-6.) return gymnastics_min(a,b,c,d,e)
 
 
-
-
-
-
-
-
-
-
-
-Function Name:gymnast_finalscore
-Parameters:highest score,lowest score, score3,score4,score5,score6
-Return:((highest score + lowest score + score3+score4+score5)-(highest score+lowest score)/3) + score6
+Function Name:gymnast_calculation
+Parameters:none
+Return:float(a+b+c+d+e - (max+min))/3+(f)
 Algorithm:
-1.Perform the gymnast_final score calculation, store calculation in the result
-2.Output the result of the calculation to the user
+1.)Prompt the user to input a number for number of fencing participants
+2.)Prompt the user to input a number for No. of fencers ranked 1-8 in the World Cup standings.
+3.)Prompt the user to input a number for No. of fencers ranked 9-16 in the World Cup standings.
+4.)Prompt the user to input a number for No. of fencers ranked 17-32 in the World Cup standings.
+5.)Prompt the user to input a number for No. of fencers ranked 33-64 in the World Cup standings.
+6.)Prompt the user to input a number for No. of fencers ranked  65-100 in the World Cup standings.
+7.)Prompt the user to input a number for No. of fencers ranked 1-16 in the Junior World Cup standings.
+8.)Typecast inputs to floats.
+9.)set the variable min equal to the gymnastics_min function to determine the  lowest score(s) to drop from the execution scores
+10.)set the variable max equal to the gymnastics_max function to determine the highest score(s) to drop from the execution stores
+11.)perform the calaculation  (a+b+c+d+e - (max+min))/3+(f), store calculation in result
+12.)output"The final gymnastics score is", result)
+13.return result
+
 
 Function Name:Menu
 Parameters:None
 Return:chosen menu option
 Algorithm:
-1.Tell the user their options for the  sport  that the program will calculate statistics for(football, fencing or gymnastics).
-2.Ask the user to input the  choice of sport statistic they would like to do their calculation for
-3.Return the choice
+1.)Tell the user their options for the  sport  that the program will calculate statistics for(football, fencing or gymnastics).
+2.)Ask the user to input the  choice of sport statistic they would like to do their calculation for
+3.)if choice is football:
+    a.)call quarterback_rating()
+4.) if choice is fencing:
+    a.)call strength factor
+5.) if choice is gymnastics:
+    a.)gymnastics_calculation()
+6.)Return the choice
 
 
 Function Name: Main
@@ -130,20 +138,4 @@ Return: None
 Algorithm:
 1.Tell the user the purpose of the program
 2.Call menu to determine choice
-3.if choice is football
-    a.call input_footballnumbers
-    b.call quarterback_rating, given the inputted values store return value in answer
-    c.if answer is greater than or equal to 158.3
-        d.output "You are a perfect passer"
-    e.otherwise if attempts equals zero
-    f.end program
-    g.otherwise
-        f.ouput answer
-4. otherwise if choice is fencing
-    a.call input_fencing numbers
-    b.call strength_factor, given the inputted values store return value in answer
-    c.output answer
-5.otherwise if choice is gymnastics
-    a.call input_gymnasticsnumbers
-    b.call gymnast_finalscore
-    c.output answer
+3.return main function
