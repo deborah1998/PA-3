@@ -43,7 +43,10 @@ The first stage in your programming assignment is the requirements analysis stag
   the highest and lowest are dropped.
   The final score is acquired by adding the difficulty score to the average of the execution scores.
 
-In your program, you must do some basic error checking: check if you are going to divide by zero when relevant, and don’t do the calculation if that’s the case; and before typecasting input to an int, check that it is only digits, and don’t typecast or do the calculation otherwise. In any case where an error is detected, output that it was an error, and don’t continue the calculation – you can output a zero for the result of the calculation.
+In your program, you must do some basic error checking: check if you are going to divide by zero when relevant,
+ and don’t do the calculation if that’s the case; and before typecasting input to an int, check that it is only digits,
+ and don’t typecast or do the calculation otherwise. In any case where an error is detected, output that it was an error,
+ and don’t continue the calculation – you can output a zero for the result of the calculation.
 
 ## DESIGN
 The second stage is to design your solution based on the requirements:
