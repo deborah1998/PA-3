@@ -10,4 +10,4 @@ but I eventually understood what i was supposed to go and got that calculation t
 useful because it shortens the amount of code I would have if we couldn't use functions.Functions were also useful to call when you
 need them so you don't have to keep doing the same thing over and over to certain aspects of the  code by just repeating steps
 when you could just put that one step  it in one function  and call it it when you need it.Functions in this lab helped make the
-code more coherent.
+code more coherent and readable.
