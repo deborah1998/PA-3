@@ -1,42 +1,68 @@
 
-Testcases for PA #
+Testcases for PA #3
 
 
-Control Path 1 when choice == football:
+Control Path 1 when choice == football and when result >= 158.3:
 input:football
-(boundary values)
-completions:90
-attempts:45
-passingyards:100
+completions:75
+attempts:25
+passing yards:500
 touchdown passes:75
-interceptions:45
+interceptions:65
 output:
-"The quarterback rating is 316, They are a perfect passer!"
+"The quarterback rating is 252, They are a perfect passer!"
 
 
-Control Path 2 when choice is football,
-input:football
-completions:90
-attempts:0
-passingyards:100
-touchdown passes:75
-interceptions:45
+Control Path 2 when choice is football, and when result is <158.3
+input:
+football
+completions:75
+attempts:75
+passing yards:50
+touchdown passes:65
+interceptions:70
 output:
+"The quarterback rating of this player is 52 they are not a perfect passer"
 
 
-
-Control Path 3: when chooice is fencing and the result is greater than 2
-
-
-
-
-
-
-Control Path 5:
-
-
-
-
-
-Control Path 6:
+Control Path 3: when choice is fencing and the result is greater than 2
 Input:
+fencing
+N=100
+Sr8=25
+Sr16=15
+Sr32=10
+Sr64=20
+Sr100=15
+Jr16=15
+Output:
+"The strength factor for the U.S Fencing team is 4"
+"The strength factor can not be higher than 2!"
+
+
+
+
+
+Control Path 4:when choice is fencing and the result is less than or equal to 2
+Input:
+fencing
+N=50
+Sr8=5
+Sr16=10
+Sr32=15
+Sr64=5
+Sr100=2
+Jr16=13
+Output:
+"The strength factor for the U.S Fencing team is 2"
+
+
+
+
+Control Path 5: When the choice is gymnsatics
+Input:
+
+Control Path 6:When the  user enters a different a different sport than the ones offered
+Input:
+Tennis
+Output:This is not a valid option!!!!

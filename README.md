@@ -87,7 +87,9 @@ After your design is complete and correct, it’s time to start programming and 
    For the other 2 sports, just draw a box and state “calculations for X” where X is replaced with the name of the sport.
   * Label the control paths in your flowchart. For each control path related to the sport your flowchart, list a test case.
   * Test your program using the test cases.
-   You ALSO need to make sure you test your other sport calculations even though they aren’t part of your flowchart. If it doesn’t give the expected output, find the error and fix it. You are expected to turn in a fully functioning program without errors.
+   You ALSO need to make sure you test your other sport calculations even though they aren’t part of your flowchart.
+   If it doesn’t give the expected output, find the error and fix it.
+   You are expected to turn in a fully functioning program without errors.
 
 ## ASSIGNMENT REMINDERS
 Follow the programming assignment requirements document for comments, formatting, etc.
