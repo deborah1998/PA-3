@@ -1,25 +1,21 @@
 
 Function Name:read_int
-Parameters:None
+Parameters:prompt
 Return:An integer value input by the user
-1.)Prompt the user to input a number for completions.
-2.)Prompt the user to input a number for attempts.
-3.)Prompt the user to input a number for passing yards.
-4.)Prompt the user to input a number for touchdown passes.
-5.)Typecast inputs to floats.
-6.)Return typecasted numbers.
-
-
-
+1.)Prompt the user to input a number value.
+2.)if number.isdigit()
+    a.return the number typecasted to an int
+3.)elif number does not equal number.isdigit()
+    a.ouput "This input  is not valid !"
+    b.return zero
 
 Function Name:quarterback_rating
-Parameters:completions,attempts,passing-yards,touchdown-passes,interceptions
-Return:
-100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)+ 2.375 –
+Parameters:none
+Return:100 * [5(completions/attempts – 0.3) + 0.25(passing-yards/attempts-3) + 20(touchdown-passes/attempts)+ 2.375 –
 (25 * interceptions/attempts)]/6
 Algorithm:
 1.Perform the quarterback_rating calculation, store the QB calculation in result
-2.Output the result of the calculation to the user
+2.return the result
 
 
 Function Name:strength_factor
