@@ -1,0 +1,43 @@
+CS201 Programming Assignment 3 checklist & grading sheet
+
+PA Grade = 46.5 / 50
+
+Comments:
+2/2 Intro comments complete and clear
+0.5/1 Appropriate in-line commentary given - need throughout functions
+2/2 Function comments provided for every function
+
+Format:
+1/1 Proper use of upper/lowercase
+1/1 Appropriate use of whitespace
+
+Supporting Documents:
+2/2 Algorithm 
+2/2 Test cases
+2/2 Reflection
+1/2 Flowchart & control paths - did not provide a full path for one sport, only gives parts of each.
+
+Correctness/Completeness Issues:
+2/2 Code follows final algorithm
+2/2 User chooses which calculation to do, and that calculation only is performed
+1.5/2 User input is correct for each question, and typecast to correct type - asks twice for every value. Don't need input prompt in error checking function too.
+1.5/2 Error checking: doesn't typecast to int if can't - use an "else" instead of an "elif" in your read_int function, because you mean in any other case. Returning zero isn't the best choice though, because you won't know later if the number was actually zero or if there was an error. -1 would have worked better since none of the inputs could be negative.
+1/1 Error checking: Doesn't divide by zero
+2.75/3 Quarterback rating calculated correctly - should not typecast to an int, should remain a float as calculated.
+3/3 Strength factor calculated correctly 
+3/3 Gymanast score calculated correctly
+1/1 Tells user if quarterback is "perfect"
+2/2 Calculates min/max using own function
+0.5/1 Sets SSF to 2 if it is calculated as above 2 - this has an infinite loop. Don't call the function again if it is > 2, just set it to 2.
+2/2 outputs results
+1/1 No other logic errors
+
+Design Issues:
+1/1 Appropriate variable names
+2/2 Clear prompts
+2/2 Clear and well formatted output
+4.75/5 Appropriate function design - quarterback only returns a value in the else. It should return in all cases, and output should be in main.
+
+Extra Credit:
+
+Additional Comments:
